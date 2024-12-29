@@ -1,0 +1,128 @@
+/* Global styles for consistent font and margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("image(5).jpeg");
+}
+
+/* Styles for the fixed navigation bar */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation link styling */
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling with padding for proper spacing */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Hero section styling for center alignment */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.hero img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Button styling with hover effects */
+.hero button, .how-to-buy button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover, .how-to-buy button:hover {
+    background-color: #555;
+}
+
+/* Section-specific styles */
+.about, .how-to-buy, .tokenomics, .socials {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+}
+
+/* Chart styling for tokenomics */
+.tokenomics canvas {
+    margin: 20px auto;
+    display: block;
+}
+
+/* Social icons styling for consistent layout */
+.socials .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Back to top button styling */
+.back-to-top {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+}
